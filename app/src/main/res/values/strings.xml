@@ -24,4 +24,9 @@
     <string name="student10_desc">Коллекционирует стикеры и канцелярию, но теряет их все перед сессией. Секрет: "Учёба — как тетрис, главное — не упустить фигуру".</string>
     <!-- Student Age -->
     <string name="years_old">%d лет</string>
+    <!-- Button -->
+    <string name="expand_button_content_description">Развернуть или
+свернуть</string>
+    <!-- About -->
+    <string name="about">О студенте</string>
 </resources>
