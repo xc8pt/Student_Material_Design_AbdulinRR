@@ -1,7 +1,5 @@
 package com.abdulin.student_material_design
 
-import android.R.attr.text
-import android.media.Image
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,8 +15,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -31,6 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.abdulin.student_material_design.data.Student
 import com.abdulin.student_material_design.data.students
 import com.abdulin.student_material_design.ui.theme.Student_Material_DesignTheme
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -87,23 +86,32 @@ fun StudentItem(
     student: Student,
     modifier: Modifier = Modifier
 ) {
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(dimensionResource(R.dimen.padding_small))
-    ) {
-        StudentIcon(student.imageResourceId)
-        StudentInformation(student.name, student.age)
+    Card(modifier = modifier) {
+        Row(
+            modifier = modifier
+                .fillMaxWidth()
+                .padding(dimensionResource(R.dimen.padding_small))
+        ) {
+            StudentIcon(student.imageResourceId)
+            StudentInformation(student.name, student.age)
+        }
     }
 }
 
 @Composable
 fun StudentApp() {
-    LazyColumn {
-        items(students) {
-            StudentItem(student = it)
+    Scaffold { it ->
+        LazyColumn(contentPadding = it) {
+            items(students) {
+                StudentItem(
+                    student = it,
+                    modifier = Modifier
+                        .padding(dimensionResource(R.dimen.padding_small))
+                )
+            }
         }
     }
+
 }
 
 @Preview
@@ -120,11 +128,4 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
-}
-
-@Composable
-fun GreetingPreview() {
-    Student_Material_DesignTheme {
-        Greeting("Android")
-    }
 }
