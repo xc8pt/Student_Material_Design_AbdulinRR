@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">Student_Material_Design</string>
+    <string name="app_name">Student List</string>
+    <!-- Student names -->
+    <string name="student1">Алексей Иванов</string>
+    <string name="student2">Роман Соколов</string>
+    <string name="student3">Максим Новиков</string>
+    <string name="student4">Сергей Лебедев</string>
+    <string name="student5">Григорий Носов</string>
+    <string name="student6">Михаил Шёпотов</string>
+    <string name="student7">Игнат Абдулаев</string>
+    <string name="student8">Марат Чертенко</string>
+    <string name="student9">Антон Шишников</string>
+    <string name="student10">Никита Никитин</string>
+    <!-- Student desc -->
+    <string name="student1_desc">Тот парень, который всегда знает, как починить Wi-Fi в общаге, но забывает сдать курсовую до дедлайна. Его суперсила: превращать кофе в код за 5 минут до экзамена.</string>
+    <string name="student2_desc">Мастерски жонглирует лекциями, подработкой и сериалами, но ноутбук глючит только на самых важных парах. Секрет успеха: стикеры с мемами на мониторе для мотивации.</string>
+    <string name="student3_desc">Король энергетиков и ночных сессий, пишет диплом на троих, но путает даты всех зачётов. Девиз: "Сон — для слабаков, а кофе — вечный двигатель".</string>
+    <string name="student4_desc">Идеально планирует расписание в Google Calendar, но всё рушится из-за "ещё одной серии". Хак: прятать телефон в микроволновку во время учёбы (работает!).</string>
+    <string name="student5_desc">Собирает ПК мечты из AliExpress, но на экзамене рисует схемы вместо ответов. Легенда общаги: "Если сломается принтер — зовите, починит взглядом".</string>
+    <string name="student6_desc">Эксперт по групповым чатам и мемам, где все планы превращаются в "потом". Супероружие: идеальный конспект, который делит только с лучшими друзьями.</string>
+    <string name="student7_desc">Обещает "завтра начну учить", но завтра — это всегда вчера. Чемпион по оправданиям: "Собака съела флешку с лабой".</string>
+    <string name="student8_desc">Пишет эссе на 5+ за ночь, но теряет их в облаке перед сдачей. Фишка: кофе с печеньками как ритуал перед "битвой с дедлайном".</string>
+    <string name="student9_desc">Гений математики, но в жизни ориентируется только по Google Maps. Юмор: "Если формула не сходится — значит, мир сломался".</string>
+    <string name="student10_desc">Коллекционирует стикеры и канцелярию, но теряет их все перед сессией. Секрет: "Учёба — как тетрис, главное — не упустить фигуру".</string>
+    <!-- Student Age -->
+    <string name="years_old">%d лет</string>
 </resources>
