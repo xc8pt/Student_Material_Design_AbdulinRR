@@ -121,6 +121,7 @@ fun Student_Material_DesignTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        content = content
+        content = content,
+        shapes = Shapes
     )
 }
